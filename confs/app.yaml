@@ -25,7 +25,7 @@ kind: Service
 metadata:
   name: wil-app-service
 spec:
-  # type: LoadBalancer # Exposes it to the K3d load balancer we mapped earlier
+  type: LoadBalancer
   selector:
     app: wil-app
   ports:
