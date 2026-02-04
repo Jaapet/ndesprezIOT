@@ -12,6 +12,8 @@ spec:
       labels:
         app: wil-app
     spec:
+      imagePullSecrets:
+      - name: dockercfg
       containers:
       - name: wil-app
         image: wil42/playground:v1
